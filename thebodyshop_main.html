@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/thebodyshop_main_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="../script/jquery-1.12.3.js"></script>
+    <script src="../script/thebodyshop_main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>더바디샵</title>
+</head>
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+    });
+    </script>
+    <!-- 팝업 시작 -->
+    <div id="popup">
+        <img src="../images/popup.png" alt="popup">
+        <div id="popup_close"><img src="../images/x_icon.png" alt="x_icon"></div>
+        <div id="popup_txt_wrap">
+            <div id="popup_txt_top">
+                <h5>두피의 뾰루지가 사라졌어요!<br>머리 기름도 덜지고 향기도 좋아요</h5>
+            </div>
+            <div id="popup_txt_bot">
+                <div id="star_icon">
+                    <img src="../images/star_icon.png" alt="star_icon">
+                </div>
+                <p>@dgdtf님</p>
+            </div>
+        </div>
+    </div>
+    <!-- 탑 버튼 시작 -->
+    <div id="top_btn">
+        <img src="../images/top_btn.png" alt="top_btn">
+    </div>
+    <!-- 헤더 시작 -->
+    <header>
+        <div id="menu_wrap">
+            <ul id="menu_top_wrap">
+                <li><a href="../html/thebodyshop_detail_page.html" target="blank">로그인</a></li>
+                <li><a href="../html/thebodyshop_detail_page.html" target="blank">회원가입</a></li>
+                <li><a href="../html/thebodyshop_detail_page.html" target="blank">고객센터</a></li>
+            </ul>
+            <nav>
+                <div id="logo">
+                    <img src="../images/thebodyshop_logo.png" alt="logo">
+                </div>
+                <form>
+                    <input type="search" placeholder="이달의 스페셜 사은품을 알아봐요">
+                    <img src="../images/search_icon.png" alt="search_icon">
+                </form>
+                <div id="bot_menu">
+                    <ul id="bot_menu_wrap">
+                        <li><a href="../html/thebodyshop_detail_page.html" target="blank">테마상품</a></li>
+                        <li><a href="../html/thebodyshop_detail_page.html" target="blank">전체상품</a></li>
+                        <li><a href="../html/thebodyshop_detail_page.html" target="blank">이벤트</a></li>
+                        <li><a href="../html/thebodyshop_detail_page.html" target="blank">SELF LOVE</a></li>
+                        <li><a href="../html/thebodyshop_detail_page.html" target="blank">ABOUT US</a></li>
+                    </ul>
+                </div>
+                <div id="menu_icon">
+                    <img src="../images/menu_icon.png" alt="menu_icon">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- 메인 배너 시작 -->
+    <section class="main_visual">
+        <ul>
+            <li>
+                <div class="main_slide_img">
+                    <a href="../html/thebodyshop_detail_page.html" target="blank"><img src="../images/main_back1.png" alt="슬라이드 이미지1" style="background-position: center; background-repeat: no-repeat; background-size: cover;">
+                    <div class="main_visual_txt_wrap">
+                        <p>EVENT</p>
+                        <h2>지효는 왜 설레일까요?</h2>
+                        <h4><i>SHARE THE LOVE</i></h4>
+                    </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="main_slide_img">
+                    <a href="../html/thebodyshop_detail_page.html" target="blank"><img src="../images/main_back2.png" alt="슬라이드 이미지2" style="background-position: center; background-repeat: no-repeat; background-size: cover;">
+                    <div class="main_visual_txt_wrap">
+                        <p id="main_box_txt2">NEW</p>
+                        <h2 id="main_tit2">알로에 카밍 토너</h2>
+                        <h4 id="main_txt2"><i>Aloe Calming Toner</i></h4>
+                    </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="main_slide_img">
+                    <a href="../html/thebodyshop_detail_page.html" target="blank"><img src="../images/main_back3.png" alt="슬라이드 이미지3" style="background-position: center; background-repeat: no-repeat; background-size: cover;">
+                    <div class="main_visual_txt_wrap">
+                        <h2 id="main_tit3">제로웨이스트,<br>
+                            더바디샵의 실천이자 약속입니다.</h2>
+                        <h4 id="main_txt3"><i>Zeto waste Life</i></h4>
+                    </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        
+    </section>
+    <div class="main_visual_wrap">
+        <div id="main_visual_prev">
+            <a href="#none">
+                <img src="../images/main_btn_prev.png" alt="main_btn_prev">
+            </a>
+        </div>
+        <div id="main_visual_next">
+            <a href="#none">
+                <img src="../images/main_btn_next.png" alt="main_btn_next">
+            </a>
+        </div>
+        <div id="main_visual_btn">
+            <a href="../html/thebodyshop_detail_page.html" target="blank">
+                <img src="../images/view_more_btn.png" alt="view_more_btn">
+            </a>
+        </div>
+    </div>
+    <ul id="imgbar">
+        <li><a href="#"><img src="../images/carousel_off.png" alt="캐러셀1"></a></li>
+        <li><a href="#"><img src="../images/carousel_off.png"></a></li>
+        <li><a href="#"><img src="../images/carousel_off.png"></a></li>
+    </ul>
+    <section id="membership">
+        <h3>LYB 멤버십, 아직 모르셨나요?</h3>
+        <p>상시 할인 혜택, 웰컴 선물<br>포인트 적립, 생일 혜택 등<br>여러 혜택이 기다리고 있어요</p>
+        <div id="membership_card">
+            <img src="../images/membership_card.png" alt="memdership_card">
+        </div>
+    </section>
+    <section id="md_pick">
+        <div id="md_pick_product">
+            <img src="../images/md_pick_british_rose.png" alt="md_pick_british_rose">
+        </div>
+        <div id="md_pick_txt_wrap">
+            <h5 class="eng_tit"><i>MD's Pick!</i></h5>
+            <h3 class="kor_tit">브리티쉬 로즈 샤워젤</h3>
+            <h4 class="txt_wrap_desc">촉촉한 로즈 향으로<br>바디 피부를 깨워보세요</h4>
+            <p id="md_pick_txt1">자연 발효를 통해 추출된<br>히알루론산이 함유 되어<br>수분감과 향이 오래 지속 됩니다.</p>
+        </div>
+        <div id="md_pick_sub_img">
+            <img src="../images/md_pick_sub_img.png" alt="md_pick_sub_img">
+        </div>
+        <div class="sub_btn">
+            <div class="sub_btn_prev">
+                <a href="../html/thebodyshop_detail_page.html" target="blank">
+                    <img src="../images/snb_btn_prev.png" alt="snb_btn_prev">
+                </a>
+            </div>
+            <div class="sub_btn_next">
+                <a href="../html/thebodyshop_detail_page.html" target="blank">
+                    <img src="../images/snb_btn_next.png" alt="snb_btn_next">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="best">
+        <div id="best_txt_wrap">
+            <h5 class="eng_tit"><i>Best seller!</i></h5>
+            <h3 class="kor_tit">더바디샵의 베스트셀러</h3>
+            <h4 class="txt_wrap_desc">긴 시간, 많은 사랑을 받아온<br>특별한 향기와 촉촉함을 느껴보세요</h4>
+            <p class="view_all">view all ></p>
+        </div>
+        <div id="best_ginger" data-aos="fade-right" data-aos-duration="2000">
+            <img src="../images/ginger_all.png" alt="best_product_ginger" width="100%">
+        </div>
+        <div id="best_white_musk" data-aos="fade-left" data-aos-duration="2000">
+            <img src="../images/white_musk_all.png" alt="best_product_white_musk" width="100%">
+        </div>
+        <div id="best_tea_tree" data-aos="fade-up" data-aos-duration="2000">
+            <img src="../images/tea_tree_all.png" alt="best_product_tea_tree" width="100%">
+        </div>
+    </section>
+    <section id="brand_story">
+        <div id="zero_waste">
+            <div id="zero_waste_wrap">
+                <p id="zero_waste_eng">Zero Waste Package</p>
+                <div id="zero_waste_kor">
+                    <h3>지속가능한 더바디샵</h3>
+                    <img src="../images/arr_next.png" alt="arr_next">
+                </div>
+            </div>
+        </div>
+        <div id="our_values">
+            <div id="our_values_wrap">
+                <p id="our_values_eng">Our Values</p>
+                <div id="our_values_kor">
+                    <h3>우리는 모두 아름답습니다</h3>
+                    <img src="../images/arr_next.png" alt="arr_next">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="insta_review">
+        <div id="insta_review_wrap">
+            <div id="insta_review_inner">
+                <div class="insta_review_box1">
+                    <div id="insta_review_box1_wrap">
+                        <h2><i>#instagram</i></h2>    
+                        <p>리뷰 작성하러 가기 ></p>
+                    </div>
+                </div>
+                <div class="insta_review_box1">
+                    <img src="../images/insta_review1.png" alt="insta_review1">
+                    <div class="insta_heart">
+                        <img src="../images/insta_review_heart.png" alt="insta_review_heart">
+                    </div>
+                </div>
+                <div class="insta_review_box1">
+                    <img src="../images/insta_review2.png" alt="insta_review2">
+                    <div class="insta_heart">
+                        <img src="../images/insta_review_heart.png" alt="insta_review_heart">
+                    </div>
+                </div>
+                <div class="insta_review_box1">
+                    <img src="../images/insta_review3.png" alt="insta_review3">
+                    <div class="insta_heart">
+                        <img src="../images/insta_review_heart.png" alt="insta_review_heart">
+                    </div>
+                </div>
+                <div class="insta_review_box1">
+                    <img src="../images/insta_review4.png" alt="insta_review4">
+                    <div class="insta_heart">
+                        <img src="../images/insta_review_heart.png" alt="insta_review_heart">
+                    </div>
+                </div>
+                <div class="insta_review_box1">
+                    <img src="../images/insta_review5.png" alt="insta_review5">
+                    <div class="insta_heart">
+                        <img src="../images/insta_review_heart.png" alt="insta_review_heart">
+                    </div>
+                </div>
+            </div>
+            <div id="insta_review_txt_wrap">
+                <div id="insta_review_txt_inner">
+                    <h4>With<span>#thebodyshop</span></h4>
+                    <h3>소중한 일상과 함께해요</h3>
+                    <p>더바디샵 인스타그램을 팔로우하면<br>소식을 빠르게 받아볼 수 있어요</p>
+                </div>
+                <div class="sub_btn">
+                    <div class="sub_btn_prev">
+                        <a href="../html/thebodyshop_detail_page.html" target="blank">
+                            <img src="../images/snb_btn_prev.png" alt="snb_btn_prev">
+                        </a>
+                    </div>
+                    <div class="sub_btn_next">
+                        <a href="../html/thebodyshop_detail_page.html" target="blank">
+                            <img src="../images/snb_btn_next.png" alt="snb_btn_next">
+                        </a>
+                    </div>
+                </div>
+                <p class="view_all">view all ></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer_top_wrap">
+            <div id="footer_top">
+                <ul id="footer_top_menu">
+                    <li><a href="../html/thebodyshop_detail_page.html" target="blank">개인정보처리방침</a></li>
+                    <li><a href="../html/thebodyshop_detail_page.html" target="blank">약관개정안내</a></li>
+                    <li><a href="../html/thebodyshop_detail_page.html" target="blank">사업자정보확인</a></li>
+                    <li><a href="../html/thebodyshop_detail_page.html" target="blank">온라인이용약관</a></li>
+                </ul>
+                <ul id="footer_top_sns">
+                    <li><a href="../html/thebodyshop_detail_page.html" target="blank">
+                        <img src="../images/facebook_icon.png" alt="facebook_icon">
+                    </a></li>
+                    <li><a href="../html/thebodyshop_detail_page.html" target="blank">
+                        <img src="../images/twitter_icon.png" alt="twitter_icon">
+                    </a></li>
+                    <li><a href="../html/thebodyshop_detail_page.html" target="blank">
+                        <img src="../images/youtube_icon.png" alt="youtube_icon">
+                    </a></li>
+                    <li><a href="../html/thebodyshop_detail_page.html" target="blank">
+                        <img src="../images/naver_icon.png" alt="naver_icon">
+                    </a></li>
+                    <li><a href="../html/thebodyshop_detail_page.html" target="blank">
+                        <img src="../images/instagram_icon.png" alt="instagram_icon">
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer_bot">
+            <div id="footer_bot_left">
+                <ul id="footer_bot_left1">
+                    <li>(주)비에스케이코퍼레이션</li>
+                    <li>대표이사:박종호</li>
+                    <li>주소:서울시 강남구 학동로 401 13층</li>
+                    <li>개인정보관리책임자:정문식</li>
+                    <li>이메일 주소 : webmaster@thebodyshop.co.kr</li>
+                </ul>
+                <ul id="footer_bot_left2">
+                    <li>공정거래위원회 고시 제 2000-1호에 따른 사업자등록번호 116-81-62784</li>
+                    <li>통신판매업신고번호 제 2010-서울강남-0217호 3</li>
+                </ul>
+                <ul id="footer_bot_left3">
+                    <li>본 사이트에 게시된 자료에 대한 권리는 (주)비에스케이코퍼레이션에 있으며,<br>정보를 가공, 판매하는 행위 등 서비스에 게시된 자료를 영리목적으로 사용할 수 없습니다.</li>
+                    <li>COPYRIGHT(C) CHOEJAEJEONG ALL RIGHTS RESERVED.</li>
+                </ul>
+            </div>
+            <div id="footer_bot_right">
+                <div id="thebodyshop_footer_logo"><img src="../images/thebodyshop_footer_logo.png" alt="footer_logo"></div>
+                <div id="footer_tel_txt">
+                    <h5 id="footer_tel">080-759-7700</h5>
+                    <p>평일 오전 9시~오후 6시<br>점심시간 오후 12시~ 오후 1시<br>토, 일 공휴일 휴무</p>
+                </div>
+                <form>
+                    <select>
+                        <option>Republic of Korea</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

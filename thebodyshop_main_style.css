@@ -1,0 +1,641 @@
+:root{
+    --search-txt-gray-color:#8b8b8b;
+    --search-box-color:#e9eaed;
+    --membership-tit-color:#494e50;
+    --membership-txt-color:#53514e;
+    --md-pick-txt-color:#ab8f96;
+    --best-tit-eng-color:#372f39;
+    --zero-waste-color:#b2f3ee;
+    --our-values-color:#dfc3ba;
+    --insta-review-color:#004236;
+    --footer-back-color:#f5f6f7;
+    --footer-txt-color:#838383;
+    --section-margin:18em;
+}
+h1, h2, h3, h4,h5, h6 ,p, a, input, span{
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Noto Serif KR', serif;;
+}
+a, li{
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+/* 팝업 시작 */
+#popup{
+    position: absolute;
+    top: 70%;
+    left: 6%;
+    z-index: 10;
+    cursor: pointer;
+}
+#popup_close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+#popup_txt_wrap{
+    position: absolute;
+    left: 32px;
+    bottom:22px;
+}
+#popup_txt_wrap h5, #popup_txt_bot p{
+    font-size: 12px;
+}
+#popup_txt_bot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+/* 탑 버튼 시작 */
+#top_btn{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    z-index: 11;
+    cursor: pointer;
+}
+/* 헤더 시작 */
+header{
+    width: 100%;
+    height: 140px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+#menu_wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+#menu_top_wrap{
+    display: flex;
+    justify-content: flex-end;
+}
+#menu_top_wrap li{
+    position: relative;
+    margin: 8px;
+}
+#menu_top_wrap li a{
+    font-size: 14px;
+}
+#menu_top_wrap li:nth-child(2)::after, #menu_top_wrap li:nth-child(3)::after{
+    position: absolute;
+    top: 50%;
+    right: 110%;
+    content: "";
+    background: black;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+nav form{
+    position: relative;
+    padding-left: 3em;
+}
+nav input{
+    background: var(--search-box-color);
+    border: 0px;
+    width: 330px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+nav form img{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+nav #bot_menu{
+    width: 100%;
+}
+nav #bot_menu_wrap{
+    display: flex;
+    justify-content: end;
+}
+nav #bot_menu_wrap li{
+    padding:6px 20px;
+    transition: all .2s ease-in-out;
+}
+nav #bot_menu li:hover{ 
+    background: linear-gradient(to bottom, #14ad9121, #a6fded38);
+    color: var(--search-txt-gray-color);
+}
+nav #bot_menu li a{
+    font-size: 18px;
+}
+.submenu{
+    display: none;
+}
+nav #menu_icon{
+    display: none;
+}
+/* 메인 배너 시작 */
+.main_visual{
+    width: 100%;
+    padding-top: 140px;
+    height: 700px;
+    margin-bottom: var(--section-margin);
+    position: relative;
+}
+.main_slide_img{
+    width: 100%;
+    position: absolute;
+    top:140px;
+    left: 0;
+    height: 700px;
+}
+.main_slide_img a{
+    display: block;
+    width: 100%;
+}
+.main_slide_img img{
+    display: block;
+    width: 100%;
+}
+.main_visual_txt_wrap{
+    position: absolute;
+    top: 12%;
+    left: 24%;
+    color: white;
+}
+.main_visual_txt_wrap p{
+    display: inline-block;
+    padding: 0 8px;
+    border: 1px solid white;
+}
+.main_visual_txt_wrap h2{
+    font-size: 48px;
+    margin-left: 10px;
+}
+.main_visual_txt_wrap h4{
+    color: #ba7e6e;
+    font-size: 24px;
+    text-indent: 30px;
+    font-weight: 600;
+}
+#main_box_txt2{
+    background-color: #161813;
+}
+#main_tit2{
+    color: #5a5a5a;
+}
+#main_txt2{
+    color: #499d99;
+}
+#main_txt3{
+    text-indent: 10px;
+    color: #6194cf;
+}
+#main_visual_prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+}
+#main_visual_next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0%;
+}
+#main_visual_btn{
+    position: absolute;
+    right: 16%;
+    bottom: 16%;
+}
+#imgbar{
+    position: absolute;
+    top: 776px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    margin: 20px auto;
+    z-index: 1;
+}
+#imgbar a img{
+    float: left;
+    width: 10px;
+    height: 10px;
+    padding: 6px;
+}
+#imgbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 멤버십 시작 */
+#membership{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    background:url(../images/membership_back.png) no-repeat center;
+    background-size: cover;
+    margin-bottom: 20em;
+    cursor: pointer;
+}
+#membership_wrap{
+    width: 100%;
+}
+#membership h3{
+    position: absolute;
+    top: 16%;
+    right: 20%;
+    font-size: 32px;
+    color: var(--membership-tit-color);
+    font-weight: 600;
+}
+#membership p{
+    position: absolute;
+    top: 45%;
+    right: 25%;
+    font-size: 24px;
+    color: var(--membership-txt-color);
+}
+#membership_card{
+    position: absolute;
+    left: 16%;
+    bottom: -20%;
+}
+/* md pick 시작 */
+#md_pick{
+    position: relative;
+    background:url(../images/md_pick_back.png) no-repeat center;
+    background-size: cover;
+    width: 1300px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 28em;
+}
+#md_pick_product{
+    position: absolute;
+    top: -20%;
+    right: 6%;
+    cursor: pointer;
+}
+#md_pick_txt_wrap{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.eng_tit{
+    font-size: 18px;
+    font-weight: 600;
+}
+.kor_tit{
+    font-size: 30px;
+}
+.kor_tit::after{
+    content:"";
+    width: 40px;
+    height: 2px;
+    background: white;
+    margin: 30px;
+    margin-left: 0;
+    display: block;
+}
+.txt_wrap_desc{
+    font-size: 24px;
+}
+#md_pick_txt1{
+    font-size: 18px;
+    color: var(--md-pick-txt-color);
+    margin-top: 16px;
+}
+#md_pick_sub_img{
+    position: absolute;
+    bottom: -50%;
+    left: 10%;
+}
+.sub_btn{
+    position: absolute;
+    left: 22%;
+    bottom: -50%;
+    display: flex;
+}
+/* 베스트 시작 */
+#best{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 0.7em 1em;
+    width: 1200px;
+    height: 830px;
+    margin: 0 auto;
+    margin-bottom: var(--section-margin);
+}
+#best_txt_wrap{
+    grid-column:3 / 4;
+    align-self: center;
+}
+#eng_tit{
+    color: var(--best-tit-eng-color);
+}
+.view_all{
+    margin: 220px 60px 0px 0px;
+    text-align: end;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.view_all:hover{
+    color: var(--insta-review-color);
+}
+#best_ginger{
+    grid-column:1 / 2;
+    grid-row: 1 / 2;
+    align-self: end;
+    cursor: pointer;
+}
+#best_white_musk{
+    grid-column:2 / 3;
+    grid-row: 1 / 2;
+    cursor: pointer;
+    width: 70%;
+}
+#best_tea_tree{
+    grid-column:1 / 3;
+    grid-row: 2 / 3;
+    justify-self: end;
+    cursor: pointer;
+}
+/* 브랜드 스토리 시작 */
+#brand_story{
+    width: 100%;
+    height: 530px;
+    margin: 0 auto;
+    margin-bottom: var(--section-margin);
+    position: relative;
+}
+#zero_waste{
+    background:url(../images/zero_waste_back_L.png) fixed no-repeat center;
+    background-size: cover;
+    width: 1150px;
+    height: 330px;
+    cursor: pointer;
+}
+#zero_waste_wrap{
+    position: absolute;
+    bottom: 50%;
+    left: 24%;
+    width: 60%;
+}
+#zero_waste p{
+    color: var(--zero-waste-color);
+    display: inline-block;
+}
+#zero_waste_kor{
+    position: absolute;
+    display: flex;
+}
+#zero_waste h3{
+    color: white;
+    font-size: 30px;
+}
+#zero_waste_kor img{
+    align-self: center;
+    margin-left: 14px;
+}
+#our_values{
+    position: absolute;
+    bottom: 0;
+    right: 12%;
+    background:url(../images/our_values_back.png) no-repeat center;
+    background-size: cover;
+    width: 840px;
+    height: 420px;
+    cursor: pointer;
+}
+#our_values_wrap{
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+    width: 60%;
+}
+#our_values_wrap p{
+    color: var(--our-values-color);
+}
+#our_values_kor{
+    display: flex;
+}
+#our_values_wrap h3{
+    color: white;
+    font-size: 30px;
+}
+#our_values_kor img{
+    align-self: center;
+    margin-left: 14px;
+}
+/* 인스타 리뷰 시작 */
+#insta_review{
+    width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+    margin-bottom: var(--section-margin);
+}
+#insta_review_wrap{
+    display: flex;
+    justify-content: space-around;
+}
+#insta_review_inner{
+    display: flex;
+    flex-wrap: wrap;
+    width: 720px;
+}
+.insta_review_box1{
+    position: relative;
+    background-color: var(--insta-review-color);
+    width: 215px;
+    height: 215px;
+    margin: 6px;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.insta_heart img{
+    transition: all .2s ease-in-out;
+}
+.insta_review_box1:hover{
+    opacity: 50%;
+}
+.insta_review_box1:hover .insta_heart img{
+    opacity: 0;
+}
+.insta_review_box1:nth-child(1){
+    opacity: 1;
+}
+#insta_review_box1_wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+#insta_review_box1_wrap h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+#insta_review_box1_wrap h2::after{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: white;
+    display: block;
+}
+.insta_review_box1 img{
+    display: block;
+}
+.insta_heart{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+#insta_review_txt_wrap{
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+#insta_review_txt_inner h4, #insta_review_txt_inner h3{
+    font-size: 30px;
+    color:black;
+    margin-bottom: 30px;
+}
+#insta_review_txt_inner h4 span{
+    font-size: 30px;
+    color:var(--insta-review-color);
+    font-weight: 800;
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
+#insta_review_txt_inner p{
+    font-size: 18px;
+}
+#insta_review_txt_wrap .sub_btn{
+    position: absolute;
+    bottom: -60%;
+    left: 0;
+    display: flex;
+}
+#insta_review_txt_wrap .view_all{
+    position: absolute;
+    bottom: -110%;
+}
+/* 푸터 시작 */
+footer{
+    background-color: var(--footer-back-color);
+    padding-bottom: 40px;
+}
+#footer_top_wrap{
+    width: 100%;
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+#footer_top{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer_top_menu{
+    display: flex;
+}
+#footer_top_menu li{
+    position: relative;
+    margin: 14px 18px 14px 0;
+    font-size: 14px;
+    transition: all .2s ease-in-out;
+}
+#footer_top_menu li:hover{
+    color: var(--insta-review-color);
+}
+#footer_top_menu li:nth-child(2)::after, #footer_top_menu li:nth-child(3)::after, #footer_top_menu li:nth-child(4)::after{
+    position: absolute;
+    top: 50%;
+    right: 107%;
+    content: "";
+    background: black;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+}
+#footer_top_sns{
+    display: flex;
+    align-items: center;
+}
+#footer_top_sns li{
+    margin: 0 14px;
+}
+#footer_bot{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    line-height: 1.6em;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+#footer_bot_left ul{
+    margin-bottom: 1em;
+}
+#footer_bot_left1 li{
+    font-size: 12px;
+    line-height: 2em;
+}
+#footer_bot_left2{
+    color: var(--footer-txt-color);
+}
+#footer_bot_left3{
+    color: var(--footer-txt-color);
+    font-size: 10px;
+}
+#footer_bot_left1 li:nth-child(2){
+    display: inline-block;
+}
+#footer_bot_left1 li:nth-child(3){
+    display: inline-block;
+    margin-left: 5px;
+}
+#footer_bot_left3 li:nth-child(2){
+    margin-top: 2em;
+}
+#footer_bot_right{
+    text-align: end;
+}
+#footer_tel{
+    font-size: 18px;
+    line-height: 2em;
+    font-weight: 600;
+}
+#footer_tel_txt p{
+    font-size: 12px;
+    line-height: 1.4em;
+    color: var(--footer-txt-color);
+}
+#footer_bot_right form{
+    position: relative;
+}
+#footer_bot_right select{
+    cursor: pointer;
+    width: 164px;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 0;
+    border: 1px solid var(--insta-review-color);
+    color: var(--insta-review-color);
+    margin-top: 2em;
+}

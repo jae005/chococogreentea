@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더바디샵 리뉴얼 상세페이지</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        #pc img{
+            width: 100%;
+        }
+        #tablet img{
+            display: none;
+
+        }
+        #phone img{
+            display: none;
+
+        }
+        @media screen and (max-width:1024px){
+            #pc img{
+                display: none;
+            }
+            #tablet img{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width:768px){
+            #tablet img{
+                display: none;
+            }
+            #phone img{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="pc">
+        <img src="../images/thebodyshop_detail_page.png" alt="더바디샵 리뉴얼 상세페이지">
+    </div>
+    <div id="tablet">
+        <img src="../images/thebodyshop_datail_tablet.png" alt="더바디샵 리뉴얼 상세페이지">
+    </div>
+    <div id="phone">
+        <img src="../images/thebodyshop_datail_phone.png" alt="더바디샵 리뉴얼 상세페이지">
+    </div>
+</body>
+</html>
